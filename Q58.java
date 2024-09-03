@@ -40,13 +40,22 @@ public class Q58 {
             }
             System.out.print("\n");
         }
-        System.out.print("Addition of two matrix: ");
         for(int i=0;i<3;i++)
         {
             for(int j=0;j<3;j++)
             {
                 s[i][j]=a[i][j]+b[i][j];
             }
+            
+        }
+        System.out.print("Addition of two matrix: \n");
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+            System.out.print(s[i][j]+" ");
+            }
+            System.out.print("\n");
             
         }
     }
