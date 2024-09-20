@@ -1,11 +1,18 @@
-     import java.util.Scanner;
-     class practice {
-    public static void main(String args[])
-    {    int a;
-        System.out.print("True or false ");
-        Scanner obj=new Scanner(System.in);
-        a=obj.nextInt();
-        System.out.print("the data "+a);
+import java.util.Scanner;
+
+public class practice {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+                System.out.print(s1 +"   "+x);
+            }
+            System.out.println("================================");
+
     }
-    
 }
+
