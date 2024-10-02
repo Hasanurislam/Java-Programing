@@ -16,6 +16,13 @@ class Student{
         System.out.println(this.name);
         System.out.println(this.age);
       }
+      Student(Student s2 ){
+        this.name=s2.name;
+        this.age=s2.age;
+      }
+      Student(){
+
+      }
 }
 public class OOP {
     public static void main(String[] args) {
@@ -23,7 +30,10 @@ public class OOP {
       student1.name="Hasanur";
       student1.age=24;
 
-      student1.printdetails();
+      Student s2=new Student(student1);
+      s2.printdetails();
+
+     
       
     }
     
