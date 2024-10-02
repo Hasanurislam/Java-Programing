@@ -8,20 +8,23 @@ class pen{
         System.out.println(this.color);
     }
 }
+class Student{
+      String name;
+      int age;
+
+      public void printdetails(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+      }
+}
 public class OOP {
     public static void main(String[] args) {
-        pen pen1=new pen();
-        pen1.color="red";
-        pen1.type="gel";
-        pen pen2=new pen();
-        pen2.color="green";
-        pen2.type="bolpen";
+     Student student1=new Student();
+      student1.name="Hasanur";
+      student1.age=24;
 
-        pen1.printcolor();
-        pen2.printcolor();
-        pen1.write();
-        
-
+      student1.printdetails();
+      
     }
     
     
