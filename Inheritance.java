@@ -11,7 +11,7 @@ class Tringle extends shape{
 }
 class circle extends shape{
     public void area(int r){
-        System.out.print((3.14)*r*r);
+        System.out.println((3.14)*r*r);
     }
 }
 class square extends shape{
