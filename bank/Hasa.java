@@ -1,5 +1,5 @@
 
-package bank;
+package hasa;
 
 class Account{
     public String name;
