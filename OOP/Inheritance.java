@@ -19,7 +19,6 @@ class Hasanur extends Student{
 public class Inheritance {
     public static void main(String args[]){
         Hasanur obj=new Hasanur();
-        obj.inp();
         obj.dis();
     }
 
