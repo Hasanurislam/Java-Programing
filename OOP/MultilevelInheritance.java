@@ -1,8 +1,12 @@
+import java.util.*;
 class A{
     int a,b,c;
     void add(){
-        a=10;
-        b=20;
+        Scanner r=new Scanner(System.in);
+        System.out.println("Enter the first Number:");
+        a=r.nextInt();
+        System.out.println("Enter the second Number:");
+        b=r.nextInt();
         c=a+b;
         System.out.println("add of two Number:"+c);
     }
