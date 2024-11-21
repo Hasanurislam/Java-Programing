@@ -1,10 +1,14 @@
 class A{
-    int a=10;
+    //int a=10;
+    void show(){
+        System.out.println("Hello1");
+    }
 }
 class B extends A{
-    int a=30;
+    //int a=30;
     void show(){
-        System.out.println(super.a);
+        super.show();
+        System.out.println("Hello2");
     }
 
 }
