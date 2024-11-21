@@ -5,7 +5,7 @@ class A{
     }
     */
 
-    A(){
+    A( int a){
         System.out.println("Hello1");
     }
 }
@@ -16,8 +16,9 @@ class B extends A{
         System.out.println("Hello2");
     }
         */
-
+        
         B(){
+            super(100);
             System.out.println("Hello2");
         }
 
