@@ -1,7 +1,7 @@
 class A{
     int a;
     A(int a){
-        a=a;
+        this.a=a;
     }
     void show(){
         System.out.println(a);
