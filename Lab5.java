@@ -1,19 +1,24 @@
 import java.util.Scanner;
+class Fibonacci{
 
+    Fibonacci(int term){
+        int a=0,b=1,c;
+        System.out.print("Fibonaci series are: ");
+        for(int i=1;i<=term;i++){
+        c=a+b;
+        System.out.print(a+" ");
+        a=b;
+        b=c;
+        }
+    }
+}
 public class Lab5 {
     public static void main(String[] args) {
-        int a=0 ,c,b=1,term;
-        System.out.print("Enter the Number of term:");
+        System.out.print("Enter the Number of term: ");
         Scanner ref=new Scanner(System.in);
-        term=ref.nextInt();
-        for(int i=1;i<=term;i++){
-        System.out.print(a+" ");
-         c=a+b;
-         a=b;
-         b=c;
-        
-        }
-
+        int term1=ref.nextInt();
+        Fibonacci r=new Fibonacci(term1);
+        ref.close();
     }
     
 }
