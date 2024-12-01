@@ -1,31 +1,21 @@
 import java.util.Scanner;
 
-class Fibonacci{
-    Fibonacci(int num)
-    {
-        int a=0;
-        int b=1;
-        int c;
-        System.out.print("Fibonacci series are: ");
-        for(int i=0;i<num;i++)
-        {
-            c=a+b;
-            System.out.print(a+" ");
-            a=b;
-            b=c;
-        }
 
-
-    }
-}
 public class LabP {
    
     public static void main(String[] args) {
-        int n;
+        int a,b;
         Scanner ob=new Scanner(System.in);
-        System.out.print("Enter the term: ");
-        n=ob.nextInt();
-        Fibonacci r=new Fibonacci(n);
+        System.out.print("Enter the value of A: ");
+        a=ob.nextInt();
+        System.out.print("Enter the value of B: ");
+        b=ob.nextInt();
+        System.out.println("Before swaping value of A= "+a+" B= "+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After swaping value of A= "+a+" B= "+b);
+        
 
       
     }
