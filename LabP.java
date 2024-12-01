@@ -1,28 +1,32 @@
 import java.util.Scanner;
 
-
-public class LabP {
-    public void reverse(int num)
-    {   
-        if(num<=0)
+class Fibonacci{
+    Fibonacci(int num)
+    {
+        int a=0;
+        int b=1;
+        int c;
+        System.out.print("Fibonacci series are: ");
+        for(int i=0;i<num;i++)
         {
-            System.out.print("Please enter a positive number");
-        }else{
-        System.out.print("Reverse of a number:");
-        while(num>0)
-        {
-            int rem=num%10;
-            System.out.print(rem);
-            num=num/10;
+            c=a+b;
+            System.out.print(a+" ");
+            a=b;
+            b=c;
         }
+
+
     }
-    }
+}
+public class LabP {
+   
     public static void main(String[] args) {
         int n;
-        System.out.print("Enter a Number: ");
         Scanner ob=new Scanner(System.in);
+        System.out.print("Enter the term: ");
         n=ob.nextInt();
-        LabP r=new LabP();
-        r.reverse(n);
+        Fibonacci r=new Fibonacci(n);
+
+      
     }
 }
