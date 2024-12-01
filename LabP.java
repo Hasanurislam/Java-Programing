@@ -4,19 +4,16 @@ import java.util.Scanner;
 public class LabP {
    
     public static void main(String[] args) {
-        int a,b;
+        int term;
         Scanner ob=new Scanner(System.in);
-        System.out.print("Enter the value of A: ");
-        a=ob.nextInt();
-        System.out.print("Enter the value of B: ");
-        b=ob.nextInt();
-        System.out.println("Before swaping value of A= "+a+" B= "+b);
-        a=a+b;
-        b=a-b;
-        a=a-b;
-        System.out.println("After swaping value of A= "+a+" B= "+b);
-        
-
+        System.out.print("Enter the term: ");
+        term=ob.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            int m=term*i;
+            System.out.println(term+"X"+i+"="+m);
+        }
+     
       
     }
 }
