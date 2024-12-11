@@ -5,10 +5,13 @@ interface B
 {
     void show();
 }
-class C implements A,B
+interface D{
+    void show();
+}
+class C implements A,B,D
 {
     public void show(){
-       System.out.println("Hello");
+       System.out.println("Hi");
     }
 }
 public class Interface2 {
