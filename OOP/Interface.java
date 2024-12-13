@@ -25,7 +25,6 @@ public class Interface {
        public static void main(String[] args) {
         Client ob=new Hasanur();
         ob.input();
-        ob.output();
        }
     
 }
