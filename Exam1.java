@@ -1,25 +1,21 @@
-class A extends Thread{
+class A implements Runnable{
    public void run(){
-       try{
-         for(int i=1;i<=5;i++){
-         System.out.println("Hasanur");
-         Thread.sleep(1000);
+      for(int i=1;i<=5;i++){
+         System.out.println("child Thread");
       }
-   }
-   catch(InterruptedException i){
 
    }
-}
 }
 public class Exam1 {
 
-   public static void main(String[] args) throws InterruptedException {
-      A t=new A();
+   public static void main(String[] args) {
+      A r=new A();
+      
+      Thread t=new Thread(r);
       t.start();
-
       for(int i=1;i<=5;i++){
-         System.out.println("Zulfikar");
-         Thread.sleep(1000);
+         System.out.println("Main Thread");
       }
+
    }
 }
