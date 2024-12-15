@@ -1,22 +1,17 @@
-class A{
-   int a=10;
-   static int b=20;
-   
-   void show()
-   {
-    System.out.println(a+" "+b);
-   }
-   static void Disk()
-   {
-    System.out.println(" "+b);
-   }
+public class Exam1 {
 
-}
-    public class Exam1 {
     public static void main(String[] args) {
-        A r=new A();
-        A.Disk();
-        r.show();
+        for(int i=1;i<=5;i++)//rows
+        {
+            for(int j=i;j<5;j++)
+            {
+                System.out.print(" ");
+            }
+                for(int k=1;k<=i;k++){
+                  System.out.print("*");
+                }
+                System.out.println();
+            
+        }
     }
 }
-
